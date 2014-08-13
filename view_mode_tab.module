@@ -21,7 +21,7 @@ function view_mode_tab_menu() {
   $items['node/%node/view_modes'] = array(
     'title' => 'View Modes',
     'page callback' => '_view_mode_tab_load',
-    'page arguments' => array(1),
+    'page arguments' => array('node', 1),
     'access callback' => 'view_mode_tab_page_access',
     'access arguments' => array(1),
     'type' => MENU_LOCAL_TASK,
